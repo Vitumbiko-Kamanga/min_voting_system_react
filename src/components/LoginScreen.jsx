@@ -3,7 +3,7 @@ import Btn from './Btn.jsx'
 function LoginScreen(){
     let now = new Date().getUTCFullYear();
     return(
-        <div className='pt-10 text-center text-gray-700 text-lg '>
+        <div className='pt-10 text-center text-white text-lg bg-blue-900 h-screen'>
             <section>
                 <p className='border-dashed border-2 w-fit rounded-xl py-2 px-6 flex flex-col mx-auto'>SECURE - STUDENT - VOTING</p>
                 <h1 className='text-4xl font-semibold mt-5 '>Student Elections {now}</h1>
