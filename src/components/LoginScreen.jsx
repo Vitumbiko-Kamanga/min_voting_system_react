@@ -3,19 +3,19 @@ import Btn from './Btn.jsx'
 function LoginScreen(){
     let now = new Date().getUTCFullYear();
     return(
-        <div className='pt-10 text-center text-white text-lg bg-blue-900 h-screen'>
+        <div className='pt-10 text-center text-white text-lg bg-gray-900 h-screen'>
             <section>
-                <p className='border-dashed border-2 w-fit rounded-xl py-2 px-6 flex flex-col mx-auto'>SECURE - STUDENT - VOTING</p>
-                <h1 className='text-4xl font-semibold mt-5 '>Student Elections {now}</h1>
+                <p className='border-dashed border-2 w-fit text-blue-300 rounded-xl py-2 px-6 flex flex-col mx-auto'>SECURE - STUDENT - VOTING</p>
+                <h1 className='text-4xl font-semibold mt-5 '>Student Elections <span className="text-orange-300">{now}</span></h1>
             </section>
             
-            <section className='border-1 w-fit rounded-xl p-5 mt-10 mx-auto flex flex-col gap-5 text-left text-lg'>
+            <section className='border-1 w-fit rounded-xl p-5 mt-10 mx-auto flex flex-col gap-3 text-left text-lg'>
                 <Label htmlFor="email" text = "Email" />
                 <input className='border-1 p-2 rounded-xl w-full' type="email" name="email" id="email" placeholder='e.g. bit22-vkamanga@mubas.ac.mw' required />
                 <Label htmlFor = "regNumber" text = "Registration Number" />
                 <input className='border-1 p-2 rounded-xl w-full' type="text" name="regNumber" id="regNumber" placeholder='e.g. BIT/22/SS/012' required/>
                 <Label htmlFor = "classLevel" text = "Year of Study" />
-                <select className='border-1 p-2 rounded-xl w-full' name="classLevel" id="classLevel">
+                <select className='border-1 p-2 rounded-xl w-full bg-gray-900' name="classLevel" id="classLevel">
                     <option value="">---Select Class---</option>
                     <option className='font-semibold' value="1">Year 1</option>
                     <option className='font-semibold' value="2">Year 2</option>
