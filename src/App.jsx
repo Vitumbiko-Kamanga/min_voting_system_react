@@ -5,6 +5,7 @@ import './App.css'
 
 import LoginScreen from './components/loginScreen'
 import Landing from './components/landing.jsx'
+import Success from './components/SuccessScreen.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +13,9 @@ function App() {
   return (
     <>
       {/* <LoginScreen /> */}
-      <Landing />
+      {/* <Landing /> */}
+      <Success />
+
     </>
   )
 }

@@ -1,7 +1,11 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+
 import Btn from './Btn.jsx'
 function Landing(){
     return(
         <div className='h-screen bg-gray-900 flex flex-col gap-10 justify-center items-center'>
+            {/* <FontAwesomeIcon icon={faCheck } /> */}
             <div className='flex flex-col gap-4 justify-center pl-12'>
                 <h1 className="text-6xl font-bold align-center text-white">It's Time to make a VOTE</h1>
                 <h2 className="text-4xl text-gray-300 p-4 pl-12">Welcome to the Voting App</h2>
