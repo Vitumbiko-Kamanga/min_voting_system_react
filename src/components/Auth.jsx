@@ -1,5 +1,7 @@
 import Label from './Label.jsx'
 import Btn from './Btn.jsx'
+import Landing from './landing.jsx'
+import { Routes, Route, Link } from 'react-router-dom'
 
 function Auth() {
     return(
@@ -29,6 +31,10 @@ function Auth() {
                     <h2 className='pt-5 text-center'>Dont't have an account! <a className='text-yellow-500' href="http://"> Sign Up</a></h2>
                 </div>
             </div>
+            {/* <Link to="/Landing" className='text-sm text-gray-500'> try</Link>
+            <Routes>
+                <Route path="/Landing" element={<Landing />} />
+            </Routes> */}
         </div>
     )
 }
