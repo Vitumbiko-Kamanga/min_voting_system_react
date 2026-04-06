@@ -6,9 +6,8 @@ import './App.css'
 
 import LoginScreen from './components/loginScreen'
 import Landing from './components/landing.jsx'
-import Success from './components/SuccessScreen.jsx'
 import Auth from './components/Auth.jsx'
-import Btn from './components/Btn.jsx'
+import BallotScreen from './components/BallotScreen.jsx'
 import SuccessScreen from './components/SuccessScreen.jsx'
 
 function App() {
@@ -19,11 +18,14 @@ function App() {
       <nav className=" flex flex-rol gap-10 px-10 py-5">
         <Link to="/" className='text-lg'>Home</Link>
         <Link to="/Auth" className='text-lg'>Sign In</Link>
+        <Link to="/BallotScreen" className='text-lg'>Election Ballot</Link>
         <Link to="/SuccessScreen" className='text-lg'>Success screen</Link>
+
       </nav>
       <Routes>
         <Route path='/' element= {<Landing />} />
         <Route path='/Auth' element= {<Auth />} />
+        <Route path='/BallotScreen' element={<BallotScreen />} />
         <Route path='/SuccessScreen' element={<SuccessScreen />} />
       </Routes>
 
